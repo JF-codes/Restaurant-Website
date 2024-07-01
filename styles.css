@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3c3131;
+}
+
+nav a:hover {
+  color: #000;
+}
+nav li {
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.75em 0.75em;
+  padding: 0.25em;
+  background-color: #fbfcff;
+  color: #3c3131;
+}
+
+h1 {
+  font-size: 50px;
+  padding: 1em 0;
+  margin: 0.75em auto;
+  margin-top: 1.75em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  font-weight: bold;
+}
+
+h2 {
+  padding: 1em auto;
+  margin: 2em auto;
+}
+
+.h2 {
+  padding-bottom: 0.75em;
+  padding-top: 2em;
+  margin-bottom: 0.75em;
+  margin-top: 2em;
+  font-size: 3em;
+}
+
+.intro {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main-items {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1.5em;
+}
+
+.side {
+  font-size: 1.25em;
+}
+
+.description {
+  word-spacing: 0.1em;
+  line-height: -0.5em;
+  font-size: 1.5em;
+  padding: 1em;
+  text-align: left;
+}
+.description span {
+  padding: 1em;
+  margin-top: 1.5em;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2em;
+  margin-left: 6rem;
+  margin-bottom: 3em;
+  margin-top: 3em;
+  padding-bottom: 2.5em;
+}
+
+.location {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.location p {
+  padding: 0.5em;
+  font-weight: bold;
+}
+.hours {
+  margin-bottom: 1em;
+  padding: 0.75em;
+}
+.contact p {
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 35px;
+  padding: 0.5em;
+  margin: 2em auto 0.5em;
+}
+
+h4 {
+  padding: 0.25em 0;
+  margin: 0.5em auto;
+}
+.h4 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+}
+h5 {
+  padding: 1em 0;
+  margin: 0.5em auto;
+}
+
+p {
+  font-weight: 200;
+}
+
+li {
+  list-style: none;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.item {
+  padding-bottom: 2.5em;
+  margin-left: 1em;
+}
+input {
+  width: 3em;
+  padding: 0.3em;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.place-order {
+  padding: 1em;
+  margin-top: 2em;
+  background-color: #f13636;
+  text-align: center;
+  color: #f6eee4;
+  font-weight: bold;
+  border: 1px solid #f13636;
+  border-radius: 1.5em;
+}
+
+span {
+  display: block;
+  margin-top: 0.25em;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 6rem;
+  margin-bottom: 2em;
+}
+
+.outside-img {
+  width: 80vw;
+  height: 65vh;
+
+  margin-top: 0.5em;
+}
+
+#order_form {
+  border: 1px solid black;
+  width: 60%;
+  margin: 5em auto;
+  text-align: center;
+  padding: 3em 5em;
+  display: inline-block;
+  border-radius: 1em;
+  box-sizing: border-box;
+}
+
+#order_form p {
+  padding: 0.3em;
+  margin: 0.25em auto;
+}
+
+#order_form input {
+  border: 1px solid black;
+  width: 100%;
+  margin: 2em auto;
+  text-align: left;
+  padding: 1em 2em;
+  display: inline-block;
+  border-radius: 1.5em;
+  box-sizing: border-box;
+}
+#order_form span {
+  padding-bottom: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.order-btn {
+  margin-top: 2em;
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
+  font-size: large;
+}
+
+.order-btn button {
+  padding: 1em;
+  margin-top: 2em;
+  background-color: #f13636;
+  color: #f6eee4;
+  font-weight: bold;
+  border: 1px solid #f13636;
+  border-radius: 1.5em;
+  text-align: center;
+}
+
+.order-btn p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.order-btn a :hover {
+  background-color: #f60c0c;
+  color: #ffffff;
+  border: 1px solid #f60c0c;
+  text-align: center;
+}
+
+.sides {
+  padding: 0.25em 0;
+  margin: 0.5em auto;
+}
+
+.side-list li {
+  font-weight: bold;
+}
+.desserts {
+  padding-bottom: 0.25em;
+  margin-bottom: 1.5em;
+}
+
+.form h2 {
+  margin-top: 2em;
+}
+footer {
+  padding-top: 2.5em;
+
+  bottom: 1em;
+}
+
+footer span {
+  padding-top: 2.5em;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.25em auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav li {
+    padding: 0.2em;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .first {
+    padding-top: 2em;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .main-grid,
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 1em;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h5 {
+    padding: 1.5em 0;
+    margin: 0.5em auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h2 {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  button {
+    margin: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .order-btn p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer span {
+    position: relative;
+    bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hours {
+    margin-top: 1em;
+  }
+}
+@media screen and (max-width: 900px) {
+  #order_form {
+    border: 1px solid black;
+    width: 100%;
+    margin: 3em auto;
+    text-align: center;
+    padding: 1em 2em;
+    display: inline-block;
+    border-radius: 1em;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #order_form input {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    margin: 2em auto;
+    text-align: center;
+    padding: 1em 2em;
+    display: inline-block;
+    border-radius: 1em;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .order-btn button {
+    padding: 1em;
+    margin-top: 2em;
+    background-color: #f13636;
+    color: #f6eee4;
+    font-weight: bold;
+    border: 1px solid #f13636;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .order-btn p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .link {
+    text-align: center;
+    word-spacing: 0.1em;
+    line-height: -0.5em;
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  li {
+    list-style: none;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+}
